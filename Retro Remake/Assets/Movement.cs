@@ -3,22 +3,27 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public Rigidbody2D rb;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
-            Move(Vector3.up);
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        rb.MovePosition(rb.position + Vector2.up);
 
         if (Input.GetKeyDown(KeyCode.S))
-         Move(Vector3.down);
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        rb.MovePosition(rb.position + Vector2.down);
 
         if (Input.GetKeyDown(KeyCode.A))
-        Move(Vector3.left);
+            transform.rotation = Quaternion.Euler(0f, 0f, -180f);
+             Move(Vector3.left);
 
         if (Input.GetKeyDown(KeyCode.D))
-                Move(Vector3.right);
+            transform.rotation = Quaternion.Euler(0f, 0f, 180f);
+             Move(Vector3.right);
     }
     private void Move(Vector3 direction)
     {
-        transform.position += direction;
+       Vector3 destination = transform.position + direction;
     }
 }
