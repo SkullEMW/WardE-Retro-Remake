@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -837257053113219933}
   - component: {fileID: 5834994479337477583}
   - component: {fileID: -7437516632762136941}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: caryellow (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

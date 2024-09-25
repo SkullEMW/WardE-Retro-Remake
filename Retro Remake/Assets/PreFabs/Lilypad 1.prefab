@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3035781595056705147}
   - component: {fileID: -1990119220772879727}
   - component: {fileID: -977222939222214169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lilypad 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

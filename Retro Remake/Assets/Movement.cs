@@ -1,29 +1,51 @@
 
+using System.Collections;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public float RLmovement = .75f;
+    public float UDmovement = .82f;
+    Vector2 vecRL;
+    Vector2 vecUD;
+    private float HorizontalInput;
+    private bool facingRight = true;
+
+    private void Start()
+    {
+        vecRL = new Vector2(RLmovement, 0);
+        vecUD = new Vector2(0, UDmovement);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
-            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-        rb.MovePosition(rb.position + Vector2.up);
+            rb.MovePosition(rb.position + vecUD);
 
-        if (Input.GetKeyDown(KeyCode.S))
-            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-        rb.MovePosition(rb.position + Vector2.down);
+        else if (Input.GetKeyDown(KeyCode.S))
+            rb.MovePosition(rb.position - vecUD);
 
-        if (Input.GetKeyDown(KeyCode.A))
-            transform.rotation = Quaternion.Euler(0f, 0f, -180f);
-             Move(Vector3.left);
+        else if (Input.GetKeyDown(KeyCode.A))
+            rb.MovePosition(rb.position - vecRL);
 
-        if (Input.GetKeyDown(KeyCode.D))
-            transform.rotation = Quaternion.Euler(0f, 0f, 180f);
-             Move(Vector3.right);
+        else if (Input.GetKeyDown(KeyCode.D))
+            rb.MovePosition(rb.position + vecRL);
+
+        HorizontalInput = Input.GetAxis("Horizontal");
+
+        SetupDirectionByScale();
     }
-    private void Move(Vector3 direction)
+    private void SetupDirectionByScale()
     {
-       Vector3 destination = transform.position + direction;
+        if (HorizontalInput > 0 && facingRight || HorizontalInput < 0 && !facingRight)
+        {
+            facingRight = !facingRight;
+            Vector2 playerScale = transform.localScale;
+            playerScale.x *= -1;
+            transform.localScale = playerScale;
+        }
     }
 }
