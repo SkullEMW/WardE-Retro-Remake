@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4306579598603643481}
   - component: {fileID: -6694099145881086293}
   - component: {fileID: -841010304806720697}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: carpurple (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786e5631e50911e4599c11a8688b5363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 2, y: 0}
+  direction: {x: 2, y: 0, z: 0}
   speed: 1
   size: 1
 --- !u!50 &-841010304806720697
