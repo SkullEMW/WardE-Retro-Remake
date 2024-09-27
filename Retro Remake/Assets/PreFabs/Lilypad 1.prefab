@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -977222939222214169}
   m_Layer: 8
   m_Name: Lilypad 1
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,3 +127,5 @@ MonoBehaviour:
   direction: {x: 1, y: 0, z: 0}
   speed: 2
   size: 1
+  player: {fileID: 0}
+  SpawnPoint: {fileID: 0}

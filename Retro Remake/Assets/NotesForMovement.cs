@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement1 : MonoBehaviour
+public class NotesForMovement : MonoBehaviour
 {
     public KeyCode left = KeyCode.A, right = KeyCode.D, down = KeyCode.S, up = KeyCode.W, jump = KeyCode.W; 
     public float speed = 5;

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8296567272947365688}
   m_Layer: 8
   m_Name: log
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,3 +127,5 @@ MonoBehaviour:
   direction: {x: -2, y: 0, z: 0}
   speed: 1
   size: 2
+  player: {fileID: 0}
+  SpawnPoint: {fileID: 0}
