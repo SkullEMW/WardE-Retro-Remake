@@ -7,8 +7,7 @@ public class Move_Cycle : MonoBehaviour
     public Vector3 direction = Vector3.right;
     public float speed = 1f;
     public int size = 1;
-    public GameObject player;
-    public Transform SpawnPoint;
+   
 
     private Vector3 leftEdge;
     private Vector3 rightEdge;
@@ -36,12 +35,4 @@ public class Move_Cycle : MonoBehaviour
             transform.Translate(speed * Time.deltaTime * direction);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Obstacle")
-        {
-            Debug.Log("ow ;c");
-        }
-    }
 }
-

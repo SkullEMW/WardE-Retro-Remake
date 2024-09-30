@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     Vector2 destination;
     private float HorizontalInput;
     private bool facingRight = true;
-    private bool barrier = true;
+    
 
     private void Start()
     {

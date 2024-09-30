@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 52d60db53425b6f4a93f064775a0d5f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -127,5 +127,3 @@ MonoBehaviour:
   direction: {x: -2, y: 0, z: 0}
   speed: 1
   size: 2
-  player: {fileID: 0}
-  SpawnPoint: {fileID: 0}
