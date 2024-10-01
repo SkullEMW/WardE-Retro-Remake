@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: -5316202086755955177}
   - component: {fileID: 7512652391264910794}
   - component: {fileID: -8212050608829494192}
-  - component: {fileID: -5174330466871364225}
   m_Layer: 10
   m_Name: cargreen (3)
   m_TagString: 'Obstacle '
@@ -149,16 +148,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!114 &-5174330466871364225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8125619864620052851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2e6e310f49a21459980fde21d4c7a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Constraints: 0
