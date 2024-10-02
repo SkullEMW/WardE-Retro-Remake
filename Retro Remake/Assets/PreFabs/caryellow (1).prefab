@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: -837257053113219933}
   - component: {fileID: 5834994479337477583}
   - component: {fileID: -7437516632762136941}
-  - component: {fileID: 5980311029143151451}
   m_Layer: 10
   m_Name: caryellow (1)
   m_TagString: 'Obstacle '
@@ -34,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2583946150039610162
 SpriteRenderer:
@@ -150,15 +149,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5980311029143151451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7541373111870552863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2e6e310f49a21459980fde21d4c7a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
